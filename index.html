@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commemorative Events Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calendar-app">
+    <header class="controls">
+      <div class="nav-buttons">
+        <button id="prev-btn" aria-label="Go to previous month">&lt; Previous</button>
+        <button id="next-btn" aria-label="Go to next month">Next &gt;</button>
+      </div>
+
+      <div class="jump-controls">
+        <label for="month-select">Month:</label>
+        <select id="month-select">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+
+        <label for="year-input">Year:</label>
+        <input type="number" id="year-input" value="2026" min="1" max="9999">
+
+        <button id="jump-btn">Jump</button>
+      </div>
+    </header>
+
+    <h1 id="month-year-title" aria-live="polite">October 2026</h1>
+
+    <div class="calendar-grid" role="region" aria-label="Calendar month grid">
+      <!-- Weekday Headers starting with Sunday -->
+      <div class="weekday-header">Sun</div>
+      <div class="weekday-header">Mon</div>
+      <div class="weekday-header">Tue</div>
+      <div class="weekday-header">Wed</div>
+      <div class="weekday-header">Thu</div>
+      <div class="weekday-header">Fri</div>
+      <div class="weekday-header">Sat</div>
+
+      <!-- Container where day cells will be generated -->
+      <div id="calendar-days" class="days-container"></div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

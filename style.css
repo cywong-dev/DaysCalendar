@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Header and navigation controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav-buttons, .jump-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button, select, input {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+/* Updated button styles with high contrast background for accessibility */
+button {
+  background-color: #004085; /* Dark navy blue with high contrast against white text */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Calendar Grid Layout */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+}
+
+.weekday-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.days-container {
+  display: contents;
+}
+
+.day-cell {
+  background-color: #fff;
+  min-height: 90px;
+  padding: 8px;
+}
+
+.day-cell.empty {
+  background-color: #eee;
+}
+
+.day-number {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Event Badges */
+.event-tag {
+  display: block;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 4px;
+  margin-top: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 600;
+}
