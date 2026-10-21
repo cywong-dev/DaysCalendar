@@ -40,7 +40,7 @@ The new day can be shown correctly in the web page.
 *Rubric description**
 Repository must contain at least one unit test demonstrating that code works.
 **Test description** 
-Unit tests in `common.test.mjs` - Created Node.js unit tests (`common.test.mjs`) using `node:assert/strict` to test core date calculation and JSON rule-matching logic. 
+Unit tests in `common.test.js` - Created Node.js unit tests (`common.test.js`) using `node:assert/strict` to test core date calculation and JSON rule-matching logic. 
 **Test result**
 The assertion pass successfully.
 
