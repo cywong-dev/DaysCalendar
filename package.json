@@ -1,0 +1,12 @@
+{
+  "name": "dayscalendar",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "node common.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type":"module"
+}
