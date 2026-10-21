@@ -1,5 +1,5 @@
 import assert from 'node.assert/strict';
-import { getOccurrenceDay, isEventOnDate, getEventsForDate } from './common.js';
+import { getEventsForDate } from './common.js';
 
 console.log('Running Calendar Unit Tests...');
 
